@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform</title>
+    <style>
+        img {
+            width: 100px;
+            height: 60px;
+        }
+
+        img:hover {
+            transform: translate(200px, 100px);
+        }
+
+        #one {
+            transform: rotate(45deg);
+        }
+
+        #two {
+            transform: scale(3, 1);
+            /* scale(x,y) increase or decrease */
+        }
+
+        #three {
+            margin: auto;
+            transform: scaleX(5);
+            /* 
+                x axis means  +x , -x  // +5 times increase of original size
+            */
+        }
+
+        #four {
+            margin: auto;
+            transform: scaleX(.5);
+            /* 
+                x axis means  +x , -x  // .5 times decrease of original size
+            */
+        }
+
+        #five{
+            transform: rotateZ(45deg);
+        }
+
+
+        .skews div{
+            transform: skew(20deg, 10deg);
+        }
+
+
+    </style>
+</head>
+
+<body>
+
+    <!-- translate transform -->
+    <section class="translate">
+        <img src="razer-blade-15-1920x1080-ces-2019-21020.jpeg" alt="">
+    </section>
+
+    <hr>
+    <!-- scale transform -->
+    <section class="scale">
+        <div id="one" style="background-color: blueviolet; width: 100px; height: 100px;">
+            <h1>Www</h1>
+        </div>
+
+        <br>
+        <br>
+        <div id="two" style="background-color: blueviolet; width: 100px; height: 100px;">
+            <h1>Www</h1>
+        </div>
+
+        <br>
+        <br>
+        <div id="three" style="background-color: blueviolet; width: 100px; height: 100px;">
+            <h1>Www</h1>
+        </div>
+
+        <br>
+        <br>
+        <div id="four" style="background-color: blueviolet; width: 200px; height: 100px;">
+            <h1>Www</h1>
+        </div>
+
+        <br>
+        <br>
+        <div id="five" style="background-color: blueviolet; width: 200px; height: 100px;">
+            <h1>Www</h1>
+        </div>
+
+    </section>
+
+    <hr>
+
+    <!-- skew transform -->
+    <section class="skews">
+        <div style="background-color: rgb(15, 198, 223); width: 200px; height: 100px;"> <p>Lorem ipsum dolor sit amet.</p></div>
+    </section>
+</body>
+
+</html>
